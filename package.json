@@ -2,9 +2,9 @@
   "name": "ci-cd-studies",
   "version": "1.0.0",
   "description": "Studies repository about Continuous Integration and Delivery",
-  "main": "sayHello.js",
+  "main": "node src/greating/sayHello.js",
   "scripts": {
-    "start": "node sayHello.js",
+    "start": "node src/greating/sayHello.js",
     "test": "jest"
   },
   "keywords": [],
