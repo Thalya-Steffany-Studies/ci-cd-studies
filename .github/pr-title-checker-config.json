@@ -1,8 +1,4 @@
 {
-  "LABEL": {
-    "name": "title needs formatting",
-    "color": "EEEEEE"
-  },
   "CHECKS": {
     "regexp": "^\\[(Feature|Chore|Fix|Docs)\\]: [A-Z]",
     "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
