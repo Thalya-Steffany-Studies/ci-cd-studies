@@ -1,6 +1,7 @@
 name: PR Actions
-on: [pull_request]	
-types: [opened, edited, synchronize]	
+on: 
+  pull-request: 
+    branches: ["main"]
 jobs:
   publish:
   runs-on: ubuntu-latest
