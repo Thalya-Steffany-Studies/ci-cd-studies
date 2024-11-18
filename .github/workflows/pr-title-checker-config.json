@@ -1,0 +1,16 @@
+{
+  "LABEL": {
+    "name": "title needs formatting",
+    "color": "EEEEEE"
+  },
+  "CHECKS": {
+    "prefixes": ["[Fix]", "[Feature]", "[Docs]", "[Chore]"],
+    "regexp": "^\\[(Fix|Feature|Docs|Chore)\\]:\\s.*",
+    "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
+  },
+  "MESSAGES": {
+    "success": "All OK",
+    "failure": "The PR title isn't in the pattern",
+    "notice": ""
+  }
+}
