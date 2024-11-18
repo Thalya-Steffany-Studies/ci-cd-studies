@@ -1,9 +1,9 @@
-name: PR Actions
+name: Pull Request CI
 
 on:
   pull_request:
     types: [opened, edited]
-    branches: ["main"]
+    branches: ["main", "develop"]
 jobs:
   publish:
     runs-on: ubuntu-latest
