@@ -22,4 +22,4 @@ jobs:
         with:
           repo-token: ${{ secrets.GITHUB_TOKEN }}
           exempt-labels: no qa
-          template-path: false
+          template-path: ""
