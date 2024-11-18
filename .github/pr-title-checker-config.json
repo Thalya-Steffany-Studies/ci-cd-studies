@@ -1,16 +1,12 @@
 {
-  "LABEL": {
-    "name": "The PR title isn't in the pattern",
-    "color": "EEEEEE"
-  },
   "CHECKS": {
-    "prefixes": ["[Fix]", "[Feature]", "[Docs]", "[Chore]"],
-    "regexp": "^\\[(Fix|Feature|Docs|Chore)\\]:\\s.*",
+    "regexp": "^\\[(Feature|Chore|Fix|Docs)\\]: [A-Z]",
     "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
   },
   "MESSAGES": {
     "success": "All OK",
-    "failure": "The PR title isn't in the pattern",
+    "failure": "The PR title isn't in the pattern '[Feature|Chore|Fix|Docs]: Title'",
     "notice": ""
   }
 }
+
