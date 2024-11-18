@@ -5,7 +5,7 @@
   },
   "MESSAGES": {
     "success": "All OK",
-    "failure": "The PR title isn't in the pattern ([Feature|Chore|Fix|Docs]): Title",
+    "failure": "The PR title isn't in the pattern '[Feature|Chore|Fix|Docs]: Title'",
     "notice": ""
   }
 }
