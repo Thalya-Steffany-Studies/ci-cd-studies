@@ -5,7 +5,7 @@
   },
   "CHECKS": {
     "prefixes": ["[Fix]", "[Feature]", "[Docs]", "[Chore]"],
-    "regexp": "^\\[(Fix|Feature|Docs|Chore)\\]\\:\\s([A-Z].*)",
+    "regexp": "^\\[(Feature|Chore|Fix|Docs)\\]: [A-Z]",
     "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
   },
   "MESSAGES": {
