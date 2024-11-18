@@ -4,7 +4,6 @@
     "color": "EEEEEE"
   },
   "CHECKS": {
-    "prefixes": ["[Fix]: ", "[Feature]: ", "[Docs]: ", "[Chore]: "],
     "regexp": "^\\[(Feature|Chore|Fix|Docs)\\]: [A-Z]",
     "ignoreLabels" : ["dont-check-PRs-with-this-label", "meta"]
   },
