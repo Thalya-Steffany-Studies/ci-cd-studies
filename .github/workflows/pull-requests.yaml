@@ -10,3 +10,19 @@ jobs:
       uses: thehanimo/pr-title-checker@v1.0.0
        with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+name: PR Actions
+
+on:
+  pull-request:
+    branches: [ "main" ]
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - name: Check PR Title
+      uses: thehanimo/pr-title-checker@v1.0.0
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
