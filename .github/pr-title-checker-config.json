@@ -1,6 +1,6 @@
 {
   "LABEL": {
-    "name": "The PR title isn't in the pattern",
+    "name": "title needs formatting",
     "color": "EEEEEE"
   },
   "CHECKS": {
