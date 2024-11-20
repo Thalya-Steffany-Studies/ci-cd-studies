@@ -21,6 +21,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_CONTAINS_PATTERN: '.{10,}'
-          PR_COMMENT: |
-            PR description is mandatory. Please, describe your changes and add any important information that helps to understand better the made changes.
-  
+          PR_NOT_CONTAINS_PATTERN:  'PR description is mandatory. Please, describe your changes and add any important information that helps to understand better the made changes.'
