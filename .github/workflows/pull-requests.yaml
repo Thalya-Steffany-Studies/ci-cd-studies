@@ -15,11 +15,10 @@ jobs:
         uses: thehanimo/pr-title-checker@v1.4.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
+          
       - name: Check PR Description
-        uses: jadrol/pr-description-checker-action@v1.0.0
-        id: description-checker
-        with:
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          exempt-labels: no qa
-          template-path: ""
+        uses: transferwise/actions-pr-checker@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_CONTAINS_PATTERN: '.{10,}'
+  
