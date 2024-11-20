@@ -15,3 +15,10 @@ jobs:
         uses: thehanimo/pr-title-checker@v1.4.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Check PR Description
+        uses: transferwise/actions-pr-checker@v3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_CONTAINS_PATTERN: '.{10,}'
+          PR_NOT_CONTAINS_PATTERN:  'PR description is mandatory. Please, describe your changes and add any important information that helps to understand better the made changes.'
